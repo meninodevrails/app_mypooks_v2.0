@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  resources :pets
+
   resources :posts
   resources :comments, only: [:create, :destroy]
   devise_for :users
